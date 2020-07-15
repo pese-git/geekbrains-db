@@ -1,0 +1,12 @@
+   91  aptitude update
+   92  aptitude full-upgrade 
+   93  aptitude search mysql
+   94  aptitude install mysql-server
+   95  mysql -V
+   96  mysqld -V
+   97  systemctl status mysqld
+   98  systemctl status mysql
+   99  mysql
+  100  mysql -u root -p
+  101  history
+
