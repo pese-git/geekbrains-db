@@ -1,0 +1,3 @@
+  110  mysqldump example > db/lesson3/sample.sql
+  111  cat db/lesson3/sample.sql 
+  112  mysql sample < db/lesson3/sample.sql 
