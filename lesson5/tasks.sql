@@ -525,7 +525,14 @@ SELECT DAY(birthday) as `day`, COUNT(DAY(birthday)) as counter FROM users  GROUP
 
 
 # (по желанию) Подсчитайте произведение чисел в столбце таблицы.
-SELECT  SUM(TIMESTAMPDIFF(YEAR, birthday, NOW())) AS age_sum FROM users;
+SELECT EXP(SUM(LOG(value))) FROM storehouses_products;
 
+или другой пример
+
+CREATE TABLE test(value INT);
+INSERT INTO test VALUES (1),(2),(4),(8);
+SELECT POW(4,SUM(LOG(4,value))) FROM test;
+SELECT EXP(SUM(LOG(value))) FROM test;
+SELECT * FROM test;
 
 
